@@ -127,7 +127,7 @@ theme: aircloud
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  repo: your repo url
-#  branch: master
+deploy:
+  type: git
+  repo: https://github.com/geyuxu/blog.geyuxu.com.git
+  branch: gh-pages
