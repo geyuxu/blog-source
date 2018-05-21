@@ -1,6 +1,7 @@
 title: "varnish 安装"
 date: 2016-11-11 13:09:00
-tags: [varnish] 
+tags: 
+	- varnish 
 ---
 
 1. 安装
@@ -15,6 +16,8 @@ tags: [varnish]
 2. 配置文件
 
 	1) varnish 配置文件： /etc/sysconfig/varnish
+	
+	```
 
 		* VARNISH_STORAGE_SIZE 为缓存文件大小
 		
@@ -25,6 +28,7 @@ tags: [varnish]
 		VARNISH_STORAGE_FILE=/root/varnish.cache
 		
 		VARNISH_STORAGE="file,${VARNISH_STORAGE_FILE},${VARNISH_STORAGE_SIZE}"
+	```
 
 	2) vcl 配置文件： /etc/varnish/*.vcl
 

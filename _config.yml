@@ -1,27 +1,87 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: 葛于旭日志
-subtitle: 学习笔记、随想等
-description:
-author: 葛于旭
-language:
+subtitle: 学习笔记、随想
+author: Yasin Ge
+language: zh
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://geyuxu.com
+url: http://geyuxu.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
+#Custom Setting Start
+
+# Site settings
+# 网站综合内容设置：
+SEOTitle: 葛于旭日志
+header-img: img/home-bg.jpg
+email: blog@geyuxu.cn
+description: "葛于旭日志"
+keyword: ""
+
+# SNS settings
+# 一些社交平台地址，支持以下几种：
+weibo_username:     geyuxu
+#zhihu_username:     ai-er-lan-xue-da
+github_username:    geyuxu
+#twitter_username:   AirCloud
+#facebook_username:  xiaotao.nie.5
+#linkedin_username:  小涛-聂-80964aba
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+sidebar-avatar: img/h.png
+
+# Friends
+# 友情链接
+#friends: [
+#    {
+#        title: "10000H",
+#        href: "https://www.10000h.top"
+#    },{
+#        title: "Xiaotao's Page",
+#        href: "https://niexiaotao.com"
+#    },{
+#        title: "It helps SEO",
+#        href: "#"
+#    }
+#]
+
+#comment:
+#  type: gitment
+#  id: your-id-created-by-https://github.com/settings/applications/new
+#  secret: your-secret-created-by-https://github.com/settings/applications/new
+#  owner: aircloud
+#  repo: hexo-aircloud-blog
+
+#donate:
+#  img: img/donate.jpg
+#  content: 感谢鼓励
+
+# The following content is not recommended to modify
+# 搜索数据文件路径设置，不建议改动：
+search:
+  path: search.json
+  field: post
+
+# 文章样式(是否首行缩进)：
+post_style:
+  indent: indent
+
+# Custom Setting End
 # Directory
 source_dir: source
-public_dir: target
+public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: archive
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -34,12 +94,13 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -56,17 +117,17 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 7
+per_page: 8
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: landscape
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: aircloud
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/geyuxu/blog.geyuxu.com.git 
-  branch: gh-pages
+## Docs: https://hexo.io/docs/deployment.html
+#deploy:
+#  type: git
+#  repo: your repo url
+#  branch: master
