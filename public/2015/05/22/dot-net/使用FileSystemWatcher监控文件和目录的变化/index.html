@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="葛于旭日志">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        使用FileSystemWatcher监控文件和目录的变化 - 葛于旭日志
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 学习笔记、随想 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/h.png" />
+        </div>
+        <div class="name">
+            <i>Yasin Ge</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> 学习笔记、随想 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        使用FileSystemWatcher监控文件和目录的变化
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2015-05-22 00:29:09</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#C#" title="C#">C#</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#.Net" title=".Net">.Net</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#FileSystemWatcher" title="FileSystemWatcher">FileSystemWatcher</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>##常用属性：</p>
+<p>Path: 要监控的路径</p>
+<p>IncludeSubdirectories: 是否监控子目录</p>
+<p>Filter: 筛选器，如</p>
+<pre><code>“*.jpg | *.doc”
+</code></pre><p>NotifyFilter: 设置哪些变动会触发事件</p>
+<p>EnableRaisingEvents: 设值是否开始监控</p>
+<p>##常用事件：</p>
+<p>Changed ： 更改文件和目录时</p>
+<p>Created ： 创建文件和目录时</p>
+<p>Deleted ： 删除文件或目录时</p>
+<p>Renamed ： 重命名文件或目录时<br><a id="more"></a><br>    using System;<br>    using System.IO;</p>
+<pre><code>namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            FileSystemWatcher fsw = new FileSystemWatcher();
+
+            fsw.Path = &quot;C:\\test&quot;;
+
+            fsw.IncludeSubdirectories = true;
+
+            fsw.Filter = &quot;*&quot;;
+
+            fsw.NotifyFilter = NotifyFilters.FileName | NotifyFilters.DirectoryName | NotifyFilters.Size;
+
+            fsw.Created += new FileSystemEventHandler(fileSystemWatcher_EventHandle);
+
+            fsw.Deleted += new FileSystemEventHandler(fileSystemWatcher_EventHandle);
+
+            fsw.Changed += new FileSystemEventHandler(fileSystemWatcher_EventHandle);
+
+            fsw.Renamed += new RenamedEventHandler(fileSystemWatcher_Renamed);
+
+            fsw.EnableRaisingEvents = true;
+
+            Console.ReadKey();
+
+        }
+
+        private static void fileSystemWatcher_Renamed(object sender, RenamedEventArgs e)
+        {
+            showLog(e);
+        }
+
+        private static void fileSystemWatcher_EventHandle(object sender, FileSystemEventArgs e)
+        {
+            showLog(e);
+        }
+
+        private static void showLog(FileSystemEventArgs e)
+        { 
+            Console.WriteLine(e.Name + &quot; &quot; + e.ChangeType + &quot; &quot; + e.FullPath); 
+        }
+    }
+}
+</code></pre><p><img src="http://img.geyuxu.com/2015-05-22-001.png" alt="演示"></p>
+<hr>
+<p>参考：</p>
+<blockquote>
+<p><a href="http://blog.csdn.net/hwt0101/article/details/8469285" target="_blank" rel="noopener">FileSystemWatcher用法详解</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://msdn.microsoft.com/zh-cn/library/system.io.filesystemwatcher.aspx" target="_blank" rel="noopener">FileSystemWatcher 类（msdn）</a></p>
+</blockquote>
+<blockquote>
+<p><a href="http://blog.163.com/vic_kk/blog/static/49470524201041301257208/" target="_blank" rel="noopener">Linux和Mac OS X 中监视文件变化</a></p>
+</blockquote>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+        <li>
+            <a target="_blank" href="https://weibo.com/geyuxu">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/geyuxu">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        <!--Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a><br />-->
+        <br />&copy; 2018 Yasin Ge&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备14055844号</a>
+    </p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>

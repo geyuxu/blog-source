@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="葛于旭日志">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        fortify 基本命令 - 葛于旭日志
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 学习笔记、随想 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/h.png" />
+        </div>
+        <div class="name">
+            <i>Yasin Ge</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> 学习笔记、随想 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        fortify 基本命令
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2016-03-17 17:03:00</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#fortify" title="fortify">fortify</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>转换单一个文件 myServlet.java 并指定classpath为 lib/j2ee.jar其命令为:</p>
+<pre><code>sourceanalyzer -b MyServlet -cp lib/j2ee.jar MyServlet.java
+</code></pre><p>转换src目录下的所有.java文件并指定classpath为 lib目录下的所有.jar文件其命令为:</p>
+<pre><code>sourceanalyzer -b MyProject -cp &quot;lib/*.jar&quot; &quot;src/**/*.java“
+</code></pre><a id="more"></a>
+<p>转换文件 myCode.java并指定使用javac编译器其命令为:</p>
+<pre><code>sourceanalyzer -b mybuild –c javac -cp libs.jar MyCode.java
+</code></pre><p>J2EE项目转换简便方法</p>
+<p>把项目的所有文件和库都放在一个目录下,运行下面的命令:</p>
+<pre><code>sourceanalyzer -Xmx1000m -b pName -encoding &quot;UTF-8&quot; -cp &quot;**/*.jar&quot; .
+
+
+sourceanalyzer -Xmx1000m -b pName -appserver weblogic -appserver-verion 9 –appserver-home “d:\bea\webloigc\server\lib” -encoding &quot;UTF-8&quot; -cp &quot;**/*.jar&quot; .
+</code></pre><p>Java项目扫描实例</p>
+<p>1 clean</p>
+<pre><code>sourceanalyzer -b eightball -clean
+</code></pre><p>2 translate</p>
+<pre><code>sourceanalyzer -b eightball -Xmx1250m -jdk 1.5 -debug -cp *.jar .
+</code></pre><p>3 show -file</p>
+<pre><code>sourceanalyzer -b eightball -show-files
+</code></pre><p>4 scan</p>
+<pre><code>sourceanalyzer -b eightball -Xmx1250m -debug -scan -f
+ eightball.fpr -disable-source-rendering
+</code></pre><p>导出 pdf/rtf/xml</p>
+<pre><code>ReportGenerator -format [pdf/rtf/xml] -f 生成文件路径 -source fpr文件路径 template &quot;指定模板.xml&quot;
+</code></pre><p>以下是我写的一个脚本，用于循环扫描所有工程，每个工程的路径放在fortify_scan_dir_list.txt中</p>
+<pre><code>fortify_result_path=&quot;/root/fortify&quot;
+svn_list=&quot;/root/fortify_scan_dir_list.txt&quot;
+
+for line in $(&lt;$svn_list)
+do
+    targe_name=${line##*/}
+    echo  ------ $targe_name 开始
+
+    echo  -clean-
+    sourceanalyzer -b $targe_name -clean
+    echo  -转换-
+    sourceanalyzer -b $targe_name -cp &quot;$line/**/*.jar&quot; -source 1.7 -encoding UTF-8 &quot;$line&quot;
+    file_name=$targe_name-`date --date=&quot;-24 hour&quot; +%Y%m%d`
+    echo  -扫描-
+    sourceanalyzer -b $targe_name -format fpr -f $fortify_result_path/$file_name.fpr -scan
+    echo  -生成报告-
+    ReportGenerator -format rtf -f $fortify_result_path/$file_name.rtf -source $fortify_result_path/$file_name.fpr template &quot;Developer Workbook 2014CN.xml&quot;
+    ReportGenerator -format xml -f $fortify_result_path/$file_name.xml -source $fortify_result_path/$file_name.fpr template &quot;Developer Workbook 2014CN.xml&quot;
+    ReportGenerator -format pdf -f $fortify_result_path/$file_name.pdf -source $fortify_result_path/$file_name.fpr template &quot;Developer Workbook 2014CN.xml&quot;
+
+    echo ----- $targe_name 结束
+done
+</code></pre><hr>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+        <li>
+            <a target="_blank" href="https://weibo.com/geyuxu">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/geyuxu">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        <!--Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a><br />-->
+        <br />&copy; 2018 Yasin Ge&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备14055844号</a>
+    </p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
