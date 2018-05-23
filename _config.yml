@@ -38,7 +38,9 @@ github_username:    geyuxu
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-sidebar-avatar: img/h.png
+img-cdn: http://img.geyuxu.com/
+
+sidebar-avatar: h.png
 
 # Friends
 # 友情链接
