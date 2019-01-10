@@ -23,22 +23,22 @@ tags: [hexo]
 
 如果当前文件夹是空文件夹，也可以省略“blog”。
 
-![演示](http://img.geyuxu.com/2015-5-19-003.png)
+![演示](https://img.geyuxu.com/2015-5-19-003.png)
 <!--more-->
 3.用npm安装依赖包
 	
 	cd blog
 	npm install
-![演示](http://img.geyuxu.com/2015-5-19-004.png)
+![演示](https://img.geyuxu.com/2015-5-19-004.png)
 
 4.启动hexo服务器，预览效果
 	
 	hexo server
-![演示](http://img.geyuxu.com/2015-5-19-005.png)
+![演示](https://img.geyuxu.com/2015-5-19-005.png)
 
 用浏览器打开[http://localhost:4000](http://localhost:4000)
 
-![演示](http://img.geyuxu.com/2015-5-19-006.png)
+![演示](https://img.geyuxu.com/2015-5-19-006.png)
 
 恭喜你，拥有了自己的网站:)
 
@@ -49,10 +49,10 @@ tags: [hexo]
 输入命令在source\_posts目录下新建一个markdown文件
 
 	hexo new 服务端工程师入门与进阶Java版
-![演示](http://img.geyuxu.com/2015-5-19-007.png)
+![演示](https://img.geyuxu.com/2015-5-19-007.png)
 
 用markdown编辑器打开文件，并编辑。
-![演示](http://img.geyuxu.com/2015-5-19-008.png)
+![演示](https://img.geyuxu.com/2015-5-19-008.png)
 
 输入
 
@@ -61,7 +61,7 @@ tags: [hexo]
 
 在网页中查看效果
 
-![演示](http://img.geyuxu.com/2015-5-19-009.png)
+![演示](https://img.geyuxu.com/2015-5-19-009.png)
 
 
 --------------------------------------------------------------------------

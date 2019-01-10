@@ -5,13 +5,13 @@ tags: [clojure,clojure-clr]
 打开REPL，输入：
 
 	(System.Console/WriteLine "********")
-![演示](http://img.geyuxu.com/2015-5-20-011.png)
+![演示](https://img.geyuxu.com/2015-5-20-011.png)
 
 显然，可以通过这种形式调用.Net方法。但不够美观，我们将代码做一个封装。
 	
 	(defn writeline [message]
 		(System.Console/WriteLine message))
-![演示](http://img.geyuxu.com/2015-5-20-012.png)
+![演示](https://img.geyuxu.com/2015-5-20-012.png)
 <!--more-->
 既然可以用Console，能不能使用MessageBox呢？当然可以，以下代码加载MessageBox。
 
@@ -19,23 +19,23 @@ tags: [clojure,clojure-clr]
 	 Culture=neutral, PublicKeyToken=b77a5c561934e089")
 
 	(import (System.Windows.Forms MessageBox))
-![演示](http://img.geyuxu.com/2015-5-20-013.png)
+![演示](https://img.geyuxu.com/2015-5-20-013.png)
 	
 	(MessageBox/Show "内容" "标题")
-![演示](http://img.geyuxu.com/2015-5-20-014.png)
+![演示](https://img.geyuxu.com/2015-5-20-014.png)
 
 封装MessageBox
 
 	(defn show-message 
 		([content] (show-message content "Message")) 
 		([content title] (MessageBox/Show content title)))
-![演示](http://img.geyuxu.com/2015-5-20-015.png)
+![演示](https://img.geyuxu.com/2015-5-20-015.png)
 
 显示消息框是一件很无聊的事情，WinForms 怎么能没有form，说干就干。
 
 	(import (System.Windows.Forms Form))
 	(.Show (Form.))
-![演示](http://img.geyuxu.com/2015-5-20-016.png)
+![演示](https://img.geyuxu.com/2015-5-20-016.png)
 
 form是出来了，但是form上面什么都没有，并且程序死掉了。先这样吧，睡觉了。
 

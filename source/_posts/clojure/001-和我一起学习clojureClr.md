@@ -13,23 +13,23 @@ tags: [clojure,clojure-clr]
 我是在SourceForge下载 [https://sourceforge.net/projects/clojureclr/files/](https://sourceforge.net/projects/clojureclr/files/)
 
 将压缩包解压到你方便操作的目录
-![演示](http://img.geyuxu.com/2015-5-20-001.png)
+![演示](https://img.geyuxu.com/2015-5-20-001.png)
 
 ###使用REPL
 
 运行Clojure.Main.exe，进入REPL界面。
-![演示](http://img.geyuxu.com/2015-5-20-002.png)
+![演示](https://img.geyuxu.com/2015-5-20-002.png)
 
 万年不变的hello world
 
 	(println "hello world")
-![演示](http://img.geyuxu.com/2015-5-20-003.png)
+![演示](https://img.geyuxu.com/2015-5-20-003.png)
 
 ###栗子
 
 创建目录结构和文件com\geyuxu\examples\hello.clj
 
-![演示](http://img.geyuxu.com/2015-5-20-004.png)
+![演示](https://img.geyuxu.com/2015-5-20-004.png)
 
 在hello.clj中输入以下代码
 
@@ -41,9 +41,9 @@ tags: [clojure,clojure-clr]
 	(use 'com.geyuxu.examples.hello)
 
 	(hello "geyuxu")
-![演示](http://img.geyuxu.com/2015-5-20-006.png)
+![演示](https://img.geyuxu.com/2015-5-20-006.png)
 
-![演示](http://img.geyuxu.com/2015-5-20-007.png)
+![演示](https://img.geyuxu.com/2015-5-20-007.png)
 
 我们来简单分析一下：
 

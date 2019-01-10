@@ -271,22 +271,22 @@ mybatis-genreator并没有为我们实现分页操作，本文介绍如何编写
 Name 设置为pagination-0.1   
 Output Directory 选择一个合适的目录，我这里选的是桌面『/Users/geyuxu/Desktop』 
 添加一个目录，Directory Content      
-![img](http://img.geyuxu.com/2015-11-02-1.png)    
+![img](https://img.geyuxu.com/2015-11-02-1.png)    
 选择 生成class 文件所在的目录，我这里是 target/classes
 
 4.将打好的 jar 包导入到 maven 本地库中
 Edit Configurations    
-![img](http://img.geyuxu.com/2015-11-02-2.png)       
+![img](https://img.geyuxu.com/2015-11-02-2.png)       
 maven    
-![img](http://img.geyuxu.com/2015-11-02-3.png)       
+![img](https://img.geyuxu.com/2015-11-02-3.png)       
 name 随便填，Working directory 选当前项目的目录  
-![img](http://img.geyuxu.com/2015-11-02-4.png)      
+![img](https://img.geyuxu.com/2015-11-02-4.png)      
 Command line:    
 
 	install:install-file -Dfile=/Users/geyuxu/Desktop/pagination-0.1.jar -DgroupId=com.geyuxu.utils -DartifactId=pagination -Dversion=0.1 -Dpackaging=jar
  
 5.在[]添加如下选项
-![img](http://img.geyuxu.com/2015-11-02-5.png)   
+![img](https://img.geyuxu.com/2015-11-02-5.png)   
 
 6.修改 pom文件
 
