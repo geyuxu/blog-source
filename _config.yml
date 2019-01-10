@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://geyuxu.com/
+url: https://geyuxu.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -38,7 +38,7 @@ github_username:    geyuxu
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-img-cdn: http://img.geyuxu.com/
+img-cdn: https://img.geyuxu.com/
 
 sidebar-avatar: h.png
 
