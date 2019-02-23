@@ -1,3 +1,9 @@
+现在博客发布在netlify上（https://app.netlify.com）
+
+更新此git内容会自动发布
+
+-----
+## hexo 发布方式
 
 git clone https://github.com/geyuxu/blog-source.git blog
 
