@@ -3,7 +3,7 @@ date: 2019-02-28
 tags: [Qnap,WebDAV,NAS]
 
 ---
-https://img.geyuxu.com/blog-Nas-20190228-Qnap配置WebDAV.md.
+
 # Qnap配置WebDAV
 
 1. 打开控制台进入Web服务器配置页面，选择启动Web服务器
