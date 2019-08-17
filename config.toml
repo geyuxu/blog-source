@@ -1,4 +1,21 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+baseURL = "http://blog.geyuxu.com/"
+languageCode = "cn-zh"
+title = "于九博客"
+theme = "m10c"
+
+[params]
+  author = "yasin.gee"
+  description = "IT技术小学生"
+  avatar = "http://wx3.sinaimg.cn/large/5bc6187cly8g48tf52zvej20u00u0wfo.jpg"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/vaga"
+
+[params.style]
+  darkestColor = "#d35050"
+  darkColor = "#212121"
+  lightColor = "#f5e3e0"
+  lightestColor = "#f5f5f5"
+  primaryColor = "#fff"
+  

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>nodejs调用dnspodApi // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.57.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://example.org/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nodejs调用dnspodApi"/>
+<meta name="twitter:description" content="dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。"/>
+
+    <meta property="og:title" content="nodejs调用dnspodApi" />
+<meta property="og:description" content="dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/archives/20190223-nodejs-nodejs%E8%B0%83%E7%94%A8dnspodapi/" />
+<meta property="article:published_time" content="2015-05-23T22:30:20+00:00" />
+<meta property="article:modified_time" content="2015-05-23T22:30:20+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://example.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">nodejs调用dnspodApi</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 23, 2015
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="http://example.org/tags/nodejs/">nodejs</a><a class="tag" href="http://example.org/tags/dnspod/">dnspod</a><a class="tag" href="http://example.org/tags/api/">api</a></div></div>
+    </header>
+    <div class="post-content">
+      <p>dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。</p>
+
+<p>var https = require(&lsquo;https&rsquo;);
+    var querystring = require(&lsquo;querystring&rsquo;);</p>
+
+<pre><code>var post_data = querystring.stringify({
+    login_token:'token',
+    format:'json',// 返回的数据格式，可选，默认为xml，建议用json
+    lang:'cn'//返回的错误语言，可选，默认为en，建议用cn
+    error_on_empty:'yes' //{yes,no} 没有数据时是否返回错误，可选，默认为yes，建议用no
+});
+
+var options = {
+  hostname: 'dnsapi.cn',
+  port: 443,
+  path: '/Info.Version',
+  method: 'POST',
+  headers: {&quot;Content-type&quot;: &quot;application/x-www-form-urlencoded&quot;, &quot;Accept&quot;: &quot;text/json&quot;, &quot;User-Agent&quot;: &quot;geyuxu-nodejs/0.0.1(register@geyuxu.com)&quot;}
+};
+
+var req = https.request(options, function(res) {
+  console.log(&quot;statusCode: &quot;, res.statusCode);
+  console.log(&quot;headers: &quot;, res.headers);
+
+  res.on('data', function(d) {
+    process.stdout.write(d);
+  });
+}).on('error', function(e) {
+  console.error(e);
+});
+
+req.write(post_data);
+</code></pre>
+
+<p>login_token Token,如果由此配置，则不需要配置用户账号和用户密码<br />
+login_email 用户帐号，必选<br />
+login_password 用户密码，必选<br />
+format {json,xml} 返回的数据格式，可选，默认为xml，建议用json<br />
+lang {en,cn} 返回的错误语言，可选，默认为en，建议用cn<br />
+error_on_empty {yes,no} 没有数据时是否返回错误，可选，默认为yes，建议用no<br />
+user_id 用户的ID，可选，仅代理接口需要， 用户接口不需要提交此参数</p>
+
+<p>官方文档要求必须写上User-Agent，User-Agent原本是浏览器的标识，如<code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)</code>,dnspod要求的格式为<code>程序英文名称/版本(联系邮箱)</code>。</p>
+
+<p>必须为POST请求，GET请求会提示错误。</p>
+
+<hr />
+
+<p>参考：
+&gt;<a href="https://support.dnspod.cn/Support/api">nodejs官方文档</a></p>
+
+<blockquote>
+<p><a href="https://support.dnspod.cn/Support/api">dnspod官方api文档</a></p>
+
+<p><a href="https://github.com/DNSPod/dnspod-python">dnspod官方python调用demo</a></p>
+</blockquote>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

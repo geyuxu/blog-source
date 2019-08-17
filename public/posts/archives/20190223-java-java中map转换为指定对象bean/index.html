@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Java中Map转换为指定对象bean // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.57.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://example.org/css/main.min.59023e5fd38d6ecb0e1dfbb295077c3c67e00e3b9eb3feaf34b5a5e6b332897a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java中Map转换为指定对象bean"/>
+<meta name="twitter:description" content="调用方式：Student stu = BeanUtil.convertMap(Student.class,map);"/>
+
+    <meta property="og:title" content="Java中Map转换为指定对象bean" />
+<meta property="og:description" content="调用方式：Student stu = BeanUtil.convertMap(Student.class,map);" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/archives/20190223-java-java%E4%B8%ADmap%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%8C%87%E5%AE%9A%E5%AF%B9%E8%B1%A1bean/" />
+<meta property="article:published_time" content="2015-11-07T17:19:39+00:00" />
+<meta property="article:modified_time" content="2015-11-07T17:19:39+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://example.org/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Java中Map转换为指定对象bean</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 7, 2015
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="http://example.org/tags/java/">java</a><a class="tag" href="http://example.org/tags/%E5%8F%8D%E5%B0%84/">反射</a></div></div>
+    </header>
+    <div class="post-content">
+      <p>调用方式：Student stu = BeanUtil.convertMap(Student.class,map);</p>
+
+<p>import java.beans.BeanInfo;
+    import java.beans.Introspector;
+    import java.beans.PropertyDescriptor;
+    import java.lang.reflect.Field;
+    import java.math.BigDecimal;
+    import java.util.Date;
+    import java.util.Map;</p>
+
+<pre><code>public class BeanUtil{
+    public static &lt;T&gt; T convertMap(Class&lt;T&gt; clazz, Map map) {
+
+        BeanUtil.pretreatment(clazz,map);
+
+        T obj=null;
+        try {
+            obj = clazz.newInstance(); // 创建 JavaBean 对象
+            BeanInfo beanInfo = Introspector.getBeanInfo(clazz); // 获取类属性
+            // 给 JavaBean 对象的属性赋值
+            PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+            for (int i = 0; i &lt; propertyDescriptors.length; i++) {
+                PropertyDescriptor descriptor = propertyDescriptors[i];
+                String propertyName = descriptor.getName();
+                if (map.containsKey(propertyName)) {
+                    // 下面一句可以 try 起来，这样当一个属性赋值失败的时候就不会影响其他属性赋值。
+                    Object value = map.get(propertyName);
+                    Object[] args = new Object[1];
+                    args[0] = value;
+                    descriptor.getWriteMethod().invoke(obj, args);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return obj;
+    }
+
+    private static &lt;T&gt; void pretreatment(Class&lt;T&gt; clazz, Map map) {
+
+        Field[] declaredFields = clazz.getDeclaredFields();
+        for(Field field:declaredFields){
+            String fieldName = field.getName();
+            Object mo = map.get(fieldName);
+            if(mo == null)
+                continue;
+            if(field.getType() == Date.class){
+                if(mo instanceof Number){
+                    mo = new Date((Long) mo);
+                }
+            }else if(Number.class.isAssignableFrom(field.getType())){
+                if(mo instanceof String || mo instanceof Character) {
+                    if (field.getType() == BigDecimal.class) {
+                        mo = BigDecimal.valueOf(Long.valueOf((String)mo));
+                    }else if(field.getType() == Integer.class){
+                        mo = Integer.valueOf((String)mo);
+                    }else if(field.getType() == Short.class){
+                        mo = Short.valueOf((String)mo);
+                    }
+                }
+            }
+            map.put(fieldName,mo);
+        }
+    }
+}
+</code></pre>
+
+<p>方法pretreatment作用是预处理类型转换，保证转换不会出错。</p>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
