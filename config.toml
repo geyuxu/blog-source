@@ -3,14 +3,25 @@ languageCode = "cn-zh"
 title = "于九博客"
 theme = "m10c"
 
+
 [params]
   author = "yasin.gee"
   description = "IT技术小学生"
   avatar = "http://wx3.sinaimg.cn/large/5bc6187cly8g48tf52zvej20u00u0wfo.jpg"
+  BeianURL = "http://beian.miit.gov.cn"
+  BeianTXT = "苏ICP备14055844号"
+
+[[params.beian]]
+  url = "http://beian.miit.gov.cn"
+  txt = "苏ICP备14055844a号"
 
 [[params.social]]
   name = "github"
-  url = "https://github.com/vaga"
+  url = "https://github.com/geyuxu"
+
+[[params.social]]
+  name = "weibo"
+  url = "https://www.weibo.com/573005502"
 
 [params.style]
   darkestColor = "#d35050"
