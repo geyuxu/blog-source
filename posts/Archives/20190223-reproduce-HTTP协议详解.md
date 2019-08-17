@@ -1,7 +1,6 @@
 ---
 title: "HTTP协议详解"
 date: 2015-05-24 23:42:35
-tags: 转载
 ---
 原文：[HTTP协议详解](http://blog.csdn.net/gueter/article/details/1524447)
 
