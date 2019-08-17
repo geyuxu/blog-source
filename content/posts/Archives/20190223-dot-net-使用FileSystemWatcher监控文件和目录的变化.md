@@ -1,7 +1,7 @@
 ---
 title: "使用FileSystemWatcher监控文件和目录的变化"
 date: 2015-05-22 00:29:09
-tags: [C#,.Net,FileSystemWatcher]
+tags: [.Net,FileSystemWatcher]
 ---
 ##常用属性：
 
