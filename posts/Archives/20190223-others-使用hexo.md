@@ -1,3 +1,4 @@
+---
 title: "使用hexo"
 date: 2015-05-18 16:47:39
 tags: [hexo] 

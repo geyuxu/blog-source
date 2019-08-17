@@ -1,3 +1,4 @@
+---
 title: "fortify 安装配置"
 date: 2016-03-17 15:03:00
 tags: [fortify]

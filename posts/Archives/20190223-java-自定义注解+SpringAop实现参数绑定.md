@@ -1,3 +1,4 @@
+---
 title: "自定义注解+SpringAop实现参数绑定"
 date: 2015-05-23 00:19:39
 tags: [java,注解,spring mvc,aop,RequestBody]
@@ -65,7 +66,8 @@ ConverterInterceptor.java:
 	     * 1、判断参数中是否有RequestBodyMap注解<br/>
 	     * 2、将json或map转换成对象<br/>
 	     * 3、执行方法<br/>
-	     * @Title: doBasicProfiling 
+	     * @---
+title: doBasicProfiling 
 	     * @date 2015年5月21日 下午7:17:35
 	     * @author 葛于旭
 	     * @modifier 

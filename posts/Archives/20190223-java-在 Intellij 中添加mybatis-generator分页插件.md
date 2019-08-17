@@ -1,3 +1,4 @@
+---
 title: "在 Intellij 中添加mybatis-generator分页插件"
 date: 2015-11-02 20:19:39
 tags: [java,mybatis,genreator]

@@ -1,3 +1,4 @@
+---
 title: "Java中Map转换为指定对象bean"
 date: 2015-11-07 17:19:39
 tags: [java,反射]

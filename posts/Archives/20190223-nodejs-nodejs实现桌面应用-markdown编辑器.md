@@ -1,3 +1,4 @@
+---
 title: "nodejs实现桌面应用-markdown编辑器"
 date: 2015-05-30
 tags: [markdown编辑器,nodejs,node-webkit,nw,markdown] 

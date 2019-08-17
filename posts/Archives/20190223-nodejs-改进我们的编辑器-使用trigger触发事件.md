@@ -1,3 +1,4 @@
+---
 title: "改进我们的编辑器-使用trigger触发事件"
 date: 2015-05-31
 tags: [markdown编辑器,jquery,trigger]

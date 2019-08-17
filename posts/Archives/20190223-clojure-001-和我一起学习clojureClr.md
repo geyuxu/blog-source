@@ -1,3 +1,4 @@
+---
 title: "和我一起学习clojureClr-Hello World"
 date: 2015-05-20 00:44:45
 tags: [clojure,clojure-clr]

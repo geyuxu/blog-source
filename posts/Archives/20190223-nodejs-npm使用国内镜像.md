@@ -1,3 +1,4 @@
+---
 title: "npm使用国内镜像"
 date: 2015-05-28
 tags: [nodejs,npm,registry] 
