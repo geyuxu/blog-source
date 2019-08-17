@@ -1,1 +1,2 @@
-博客markdown地址 : https://github.com/geyuxu/blog-source/tree/master/content/posts
+- 博客markdown地址: https://github.com/geyuxu/blog-source/tree/master/content/posts
+- CI: https://app.netlify.com/
