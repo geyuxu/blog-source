@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>反射 on 于九博客</title>
+    <link>http://blog.geyuxu.com/tags/%E5%8F%8D%E5%B0%84/</link>
+    <description>Recent content in 反射 on 于九博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Sat, 07 Nov 2015 17:19:39 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.geyuxu.com/tags/%E5%8F%8D%E5%B0%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中Map转换为指定对象bean</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-java%E4%B8%ADmap%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%8C%87%E5%AE%9A%E5%AF%B9%E8%B1%A1bean/</link>
+      <pubDate>Sat, 07 Nov 2015 17:19:39 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-java%E4%B8%ADmap%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%8C%87%E5%AE%9A%E5%AF%B9%E8%B1%A1bean/</guid>
+      <description>&lt;p&gt;调用方式：Student stu = BeanUtil.convertMap(Student.class,map);&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

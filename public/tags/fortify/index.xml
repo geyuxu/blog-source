@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fortify on 于九博客</title>
+    <link>http://blog.geyuxu.com/tags/fortify/</link>
+    <description>Recent content in fortify on 于九博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Thu, 17 Mar 2016 17:03:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.geyuxu.com/tags/fortify/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fortify 基本命令</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 17 Mar 2016 17:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;转换单一个文件 myServlet.java 并指定classpath为 lib/j2ee.jar其命令为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sourceanalyzer -b MyServlet -cp lib/j2ee.jar MyServlet.java
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转换src目录下的所有.java文件并指定classpath为 lib目录下的所有.jar文件其命令为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sourceanalyzer -b MyProject -cp &amp;quot;lib/*.jar&amp;quot; &amp;quot;src/**/*.java“
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>fortify 安装配置</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 17 Mar 2016 15:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2016-03-17-001.png&#34; alt=&#34;HP Fortify SCA&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

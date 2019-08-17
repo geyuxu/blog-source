@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>于九博客</title>
+    <link>http://blog.geyuxu.com/</link>
+    <description>Recent content on 于九博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.geyuxu.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qnap配置WebDAV</title>
+      <link>http://blog.geyuxu.com/posts/archives/nas-20190228-qnap%E9%85%8D%E7%BD%AEwebdav/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/nas-20190228-qnap%E9%85%8D%E7%BD%AEwebdav/</guid>
+      <description> Qnap配置WebDAV  打开控制台进入Web服务器配置页面，选择启动Web服务器  进入webDAV选项卡，打开启用WebDAV。权限选择WebDAV权限。  转到 权限/共享文件夹 配置页面，点击 编辑共享文件夹权限  权限类别选择WebDAV访问，访问权限和用户根据需要选择  点击应用就配好了。
+  下面我演示使用DEVONthink链接WebDAV服务器
+ 选择 Add WebDAV Server  URL粘贴Qnap中启动的WebDAV服务地址。用户名密码是刚才选择的用户  选择Ok后可以看到已经开始同步，配置成功。   </description>
+    </item>
+    
+    <item>
+      <title>contab 简单使用笔记</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-linux-2017-06-27-contab%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 27 Jun 2017 11:43:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-linux-2017-06-27-contab%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;基本格式：
+日：1-31&lt;/p&gt;
+
+&lt;p&gt;月：1-12&lt;/p&gt;
+
+&lt;p&gt;周：0-6&lt;/p&gt;
+
+&lt;p&gt;每n分钟：*/n&lt;/p&gt;
+
+&lt;p&gt;并列：3,5,8&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>varnish 安装</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-linux-varnish-%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 11 Nov 2016 13:09:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-linux-varnish-%E5%AE%89%E8%A3%85/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装&lt;/p&gt;
+
+&lt;p&gt;rpm -ivh &lt;a href=&#34;http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm&#34;&gt;http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm&lt;/a&gt;
+rpm &amp;ndash;nosignature -i &lt;a href=&#34;https://repo.varnish-cache.org/redhat/varnish-4.1.el6.rpm&#34;&gt;https://repo.varnish-cache.org/redhat/varnish-4.1.el6.rpm&lt;/a&gt;
+yum install varnish&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EPEL 是yum的一个软件源,里面包含了许多基本源里没有的软件。&lt;/strong&gt;
+&lt;strong&gt;官方的安装文档：&lt;a href=&#34;http://varnish-cache.org/releases/index.html&#34;&gt;http://varnish-cache.org/releases/index.html&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>这是在docker容器中发布的博客</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-%E8%BF%99%E6%98%AF%E5%9C%A8docker%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 26 Apr 2016 18:47:12 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-%E8%BF%99%E6%98%AF%E5%9C%A8docker%E5%AE%B9%E5%99%A8%E4%B8%AD%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这是在 docker 容器中发布的一篇博客</description>
+    </item>
+    
+    <item>
+      <title>spring-boot JSP配置</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-spring-boot-jsp%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 09 Apr 2016 19:53:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-spring-boot-jsp%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;新建一个maven工程，pom.xml 文件如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot;
+         xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;
+         xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;
+    &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+    &amp;lt;groupId&amp;gt;com.geyuxu&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;jsp-sample&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+
+    &amp;lt;parent&amp;gt;
+        &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;spring-boot-starter-parent&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;1.3.3.RELEASE&amp;lt;/version&amp;gt;
+    &amp;lt;/parent&amp;gt;
+
+    &amp;lt;dependencies&amp;gt;
+        &amp;lt;!--spring boot--&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-boot-devtools&amp;lt;/artifactId&amp;gt;
+            &amp;lt;optional&amp;gt;true&amp;lt;/optional&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-boot-starter&amp;lt;/artifactId&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-boot-starter-tomcat&amp;lt;/artifactId&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-webmvc&amp;lt;/artifactId&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+
+        &amp;lt;!--tomcat--&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;org.apache.tomcat.embed&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;tomcat-embed-jasper&amp;lt;/artifactId&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+
+    &amp;lt;/dependencies&amp;gt;
+
+    &amp;lt;build&amp;gt;
+        &amp;lt;plugins&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;spring-boot-maven-plugin&amp;lt;/artifactId&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+    &amp;lt;/build&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>svn常用命令</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-svn%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 25 Mar 2016 14:59:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-svn%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>checkout:
+svn --username yourusername --password yourpassword co svn_path local_path  diff:
+svn diff -r 3 text.c  list:
+svn list -v http://svn.test.com/svn  cat:
+svn cat -r 4 test.c  svn add file|dir &amp;ndash; 添加文件或整个目录
+svn commit &amp;ndash; 提交本地修改代码
+svn status &amp;ndash; 查看本地修改代码情况：修改的或本地独有的文件详细信息
+svn merge &amp;ndash; 合并svn和本地代码
+svn revert &amp;ndash; 撤销本地修改代码
+svn resolve &amp;ndash; 合并冲突代码
+svn help [command] &amp;ndash; 查看svn帮助，或特定命令帮助 参考资料：
+http://www.iteye.com/problems/58166
+http://www.cnblogs.com/zhenjing/archive/2012/12/22/svn_usage.html</description>
+    </item>
+    
+    <item>
+      <title>常用jdbc连接字符串(持续更新)</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-%E5%B8%B8%E7%94%A8jdbc%E8%BF%9E%E6%8E%A5%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <pubDate>Fri, 25 Mar 2016 09:24:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-%E5%B8%B8%E7%94%A8jdbc%E8%BF%9E%E6%8E%A5%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description>&lt;h2 id=&#34;mysql&#34;&gt;mysql&lt;/h2&gt;
+
+&lt;p&gt;driverClass:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;com.mysql.jdbc.Driver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;url：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jdbc:mysql://localhost:3306/dbname?useUnicode=true&amp;amp;characterEncoding=utf-8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;memsql&#34;&gt;memsql&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs操作文件</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</guid>
+      <description>向文件中写数据：
+var txt = &#39;保存的数据&#39;; fs.writeFile(&#39;message.txt&#39;, txt, (err) =&amp;gt; { if (err) throw err; console.log(&#39;It\&#39;s saved!&#39;); } );  fs.writeFile的同步方法是
+fs.writeFileSync(file, data[, options])  从文件中读取数据：
+fs.readFile(&#39;/etc/passwd&#39;, (err, data) =&amp;gt; { if (err) throw err; console.log(data); });  node官方文档</description>
+    </item>
+    
+    <item>
+      <title>fortify 基本命令</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 17 Mar 2016 17:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;转换单一个文件 myServlet.java 并指定classpath为 lib/j2ee.jar其命令为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sourceanalyzer -b MyServlet -cp lib/j2ee.jar MyServlet.java
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转换src目录下的所有.java文件并指定classpath为 lib目录下的所有.jar文件其命令为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sourceanalyzer -b MyProject -cp &amp;quot;lib/*.jar&amp;quot; &amp;quot;src/**/*.java“
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>fortify 安装配置</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 17 Mar 2016 15:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-security-fortify-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2016-03-17-001.png&#34; alt=&#34;HP Fortify SCA&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>默默的擦亮手里的武器，准备下一次战斗</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-%E9%BB%98%E9%BB%98%E7%9A%84%E6%93%A6%E4%BA%AE%E6%89%8B%E9%87%8C%E7%9A%84%E6%AD%A6%E5%99%A8%E5%87%86%E5%A4%87%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%88%98%E6%96%97/</link>
+      <pubDate>Thu, 24 Dec 2015 15:41:12 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-%E9%BB%98%E9%BB%98%E7%9A%84%E6%93%A6%E4%BA%AE%E6%89%8B%E9%87%8C%E7%9A%84%E6%AD%A6%E5%99%A8%E5%87%86%E5%A4%87%E4%B8%8B%E4%B8%80%E6%AC%A1%E6%88%98%E6%96%97/</guid>
+      <description>来自老罗的一个小故事用于自勉  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;光武帝刘秀打仗的时候，有一次吃了败仗，夜里去巡视营房，跑到营房里看看那些战败的士兵是什么心态。结果一看，这个帐篷里几个人，满脸的泪水，哭哭啼啼，写家书的，写情书的。跑到下一个帐篷里一看，几个人喝的醉醺醺的，满脸的眼泪，抱在一块又唱又哭，丑态百出，唱“擦干眼泪陪你睡之类”之类的。走着走着，一路都是这样。终于走到一个帐篷，往里一看，里面坐着一个年轻的将军。他拿着一块破布，不停的擦自己的武器和盔甲，擦的雪亮雪亮的。脸上的表情呢，既不忧伤，也不沮丧；既不愤怒，也不亢奋。很平静，跟没事似的，就在那里擦武器，擦的雪亮雪亮的，准备下一场战斗。刘秀很惊讶，说：“这小子肯定能成事！”结果这小子真的成了事，就是东汉的大将军吴汉。</description>
+    </item>
+    
+    <item>
+      <title>Java中Map转换为指定对象bean</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-java%E4%B8%ADmap%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%8C%87%E5%AE%9A%E5%AF%B9%E8%B1%A1bean/</link>
+      <pubDate>Sat, 07 Nov 2015 17:19:39 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-java%E4%B8%ADmap%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%8C%87%E5%AE%9A%E5%AF%B9%E8%B1%A1bean/</guid>
+      <description>&lt;p&gt;调用方式：Student stu = BeanUtil.convertMap(Student.class,map);&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Intellij 中添加mybatis-generator分页插件</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-%E5%9C%A8-intellij-%E4%B8%AD%E6%B7%BB%E5%8A%A0mybatis-generator%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Mon, 02 Nov 2015 20:19:39 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-%E5%9C%A8-intellij-%E4%B8%AD%E6%B7%BB%E5%8A%A0mybatis-generator%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6/</guid>
+      <description>&lt;p&gt;mybatis-genreator并没有为我们实现分页操作，本文介绍如何编写mybatis-genreator插件实现分页。&lt;/p&gt;
+
+&lt;p&gt;前期工作：在 Intellij 中搭建 mybatis-genreator 环境。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>改进我们的编辑器-使用trigger触发事件</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-%E6%94%B9%E8%BF%9B%E6%88%91%E4%BB%AC%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8-%E4%BD%BF%E7%94%A8trigger%E8%A7%A6%E5%8F%91%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-%E6%94%B9%E8%BF%9B%E6%88%91%E4%BB%AC%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8-%E4%BD%BF%E7%94%A8trigger%E8%A7%A6%E5%8F%91%E4%BA%8B%E4%BB%B6/</guid>
+      <description>&lt;p&gt;昨天我终于把我梦寐以求的编辑器写出来了，真是很简约（lou）啊。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2015-05-31-001.png&#34; alt=&#34;演示&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs实现桌面应用-markdown编辑器</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%AE%9E%E7%8E%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8-markdown%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%AE%9E%E7%8E%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8-markdown%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>&lt;h1 id=&#34;安装node-webkit&#34;&gt;安装node-webkit&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g nw 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;什么是node-webkit&#34;&gt;什么是node-webkit&lt;/h1&gt;
+
+&lt;p&gt;node-webkit是使用nodejs和Chromium为核心开发桌面软件的技术，我们可以使用html/javascript/css来开发桌面应用的界面，用nodejs技术来开发桌面应用的逻辑业务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>看、做、想</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-%E7%9C%8B%E5%81%9A%E6%83%B3/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-%E7%9C%8B%E5%81%9A%E6%83%B3/</guid>
+      <description>不仅仅是设计，各行各业是相通的。你想要成为一个优秀的软件工程师，就需要阅读大量优秀的开源代码，去参与各种项目，更重要是去总结经验。你需要与更牛人站在一起，而不是与你一样的人混日子。</description>
+    </item>
+    
+    <item>
+      <title>npm使用国内镜像</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</guid>
+      <description>&lt;h2 id=&#34;切换方法&#34;&gt;切换方法&lt;/h2&gt;
+
+&lt;p&gt;方法一：在命令上指定&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm --registry http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法二：通过config命令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm config set registry http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法三：编辑 [User Home]/.npmrc 加入下面内容，此方法同方法二等效&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;registry = http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTTP协议详解</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-reproduce-http%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sun, 24 May 2015 23:42:35 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-reproduce-http%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;p&gt;原文：&lt;a href=&#34;http://blog.csdn.net/gueter/article/details/1524447&#34;&gt;HTTP协议详解&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;作者 :Jeffrey&lt;/p&gt;
+
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+
+&lt;p&gt;HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。它于1990年提出，经过几年的使用与发展，得到不断地完善和扩展。目前在WWW中使用的是HTTP/1.0的第六版，HTTP/1.1的规范化工作正在进行之中，而且HTTP-NG(Next Generation of HTTP)的建议已经提出。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs调用dnspodApi</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E8%B0%83%E7%94%A8dnspodapi/</link>
+      <pubDate>Sat, 23 May 2015 22:30:20 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E8%B0%83%E7%94%A8dnspodapi/</guid>
+      <description>&lt;p&gt;dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs发送https请求</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%8F%91%E9%80%81https%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Sat, 23 May 2015 18:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%8F%91%E9%80%81https%E8%AF%B7%E6%B1%82/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;var https = require(&#39;https&#39;);
+
+https.request({
+  hostname: &#39;nodejs.org&#39;,
+  port: 443,
+  path: &#39;/api/https.html&#39;,
+  method: &#39;GET&#39;
+}, function(res) {
+  console.log(&amp;quot;statusCode: &amp;quot;, res.statusCode);
+  console.log(&amp;quot;headers: &amp;quot;, res.headers);
+
+  res.on(&#39;data&#39;, function(d) {
+    process.stdout.write(d);
+  });
+}).on(&#39;error&#39;, function(e) {
+  console.error(e);
+}).end();
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>自定义注解&#43;SpringAop实现参数绑定</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-java-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3&#43;springaop%E5%AE%9E%E7%8E%B0%E5%8F%82%E6%95%B0%E7%BB%91%E5%AE%9A/</link>
+      <pubDate>Sat, 23 May 2015 00:19:39 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-java-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3&#43;springaop%E5%AE%9E%E7%8E%B0%E5%8F%82%E6%95%B0%E7%BB%91%E5%AE%9A/</guid>
+      <description>&lt;p&gt;实现自定义注解@RequestBodyMap，以下是我们的调用demo。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@RequestMapping(value = &amp;quot;/test.htm&amp;quot;, method = RequestMethod.POST)
+@ResponseBody
+public Person test(HttpServletRequest request,@RequestBodyMap Person person) {
+    //操作
+    return person;
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>markdown学习笔记</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 22 May 2015 22:47:12 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&#34;markdown支持html&#34;&gt;markdown支持html&lt;/h2&gt;
+
+&lt;ol&gt;      
+&lt;li&gt;Coffee&lt;/li&gt;    
+&lt;li&gt;Milk&lt;/li&gt;        
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol&gt;
+&lt;li&gt;标题
+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#####写法一：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 一级标题
+## 二级标题
+### 三级标题
+...
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用FileSystemWatcher监控文件和目录的变化</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-dot-net-%E4%BD%BF%E7%94%A8filesystemwatcher%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E5%8F%98%E5%8C%96/</link>
+      <pubDate>Fri, 22 May 2015 00:29:09 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-dot-net-%E4%BD%BF%E7%94%A8filesystemwatcher%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E5%8F%98%E5%8C%96/</guid>
+      <description>&lt;p&gt;##常用属性：&lt;/p&gt;
+
+&lt;p&gt;Path: 要监控的路径&lt;/p&gt;
+
+&lt;p&gt;IncludeSubdirectories: 是否监控子目录&lt;/p&gt;
+
+&lt;p&gt;Filter: 筛选器，如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;“*.jpg | *.doc”
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NotifyFilter: 设置哪些变动会触发事件&lt;/p&gt;
+
+&lt;p&gt;EnableRaisingEvents: 设值是否开始监控&lt;/p&gt;
+
+&lt;p&gt;##常用事件：&lt;/p&gt;
+
+&lt;p&gt;Changed ： 更改文件和目录时&lt;/p&gt;
+
+&lt;p&gt;Created ： 创建文件和目录时&lt;/p&gt;
+
+&lt;p&gt;Deleted ： 删除文件或目录时&lt;/p&gt;
+
+&lt;p&gt;Renamed ： 重命名文件或目录时&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每天工作4小时的程序员</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-reproduce-%E6%AF%8F%E5%A4%A9%E5%B7%A5%E4%BD%9C4%E5%B0%8F%E6%97%B6%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+      <pubDate>Thu, 21 May 2015 23:36:09 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-reproduce-%E6%AF%8F%E5%A4%A9%E5%B7%A5%E4%BD%9C4%E5%B0%8F%E6%97%B6%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
+      <description>&lt;p&gt;来源：&lt;a href=&#34;http://www.vaikan.com/daily-routine-of-a-4-hour-programmer/&#34;&gt;http://www.vaikan.com/daily-routine-of-a-4-hour-programmer/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;　　每个人都熟悉这种作息规律：早上9点去上班，坐在电脑前面，编一天的程序，下午5点下班回家。如今，非常感谢蒂莫西·费里斯 (Timothy Ferriss)的《每周工作4小时》，我开始重新思考应该如何工作，如何让自己变成更有效率的程序员。&lt;/p&gt;
+
+&lt;p&gt;　　最近，我把我的从周一到周五的作息规律做了一次较大的调整。很长时间以来，我一直像所有其他程序员那样工作、休息。但就在2011年的下半年，我开始了一项试验，想看看究竟什么样的作息时间能让我更有效率。这项实验目前仍在进行中，我并不是像军人那样严格遵守实验规定——例如，我也想会早20分钟、或晚20分钟起床——但当前制定的作息规律是这样的：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>和我一起学习clojureClr-调用.Net</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-clojure-002-%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E5%AD%A6%E4%B9%A0clojureclr-%E8%B0%83%E7%94%A8.net/</link>
+      <pubDate>Thu, 21 May 2015 00:04:41 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-clojure-002-%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E5%AD%A6%E4%B9%A0clojureclr-%E8%B0%83%E7%94%A8.net/</guid>
+      <description>&lt;p&gt;打开REPL，输入：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(System.Console/WriteLine &amp;quot;********&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2015-5-20-011.png&#34; alt=&#34;演示&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;显然，可以通过这种形式调用.Net方法。但不够美观，我们将代码做一个封装。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(defn writeline [message]
+    (System.Console/WriteLine message))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2015-5-20-012.png&#34; alt=&#34;演示&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>和我一起学习clojureClr-Hello World</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-clojure-001-%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E5%AD%A6%E4%B9%A0clojureclr/</link>
+      <pubDate>Wed, 20 May 2015 00:44:45 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-clojure-001-%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E5%AD%A6%E4%B9%A0clojureclr/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;俗话说的好，java能做的事.net也能做，java不能做的事，.net还是能做。。。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>服务端工程师入门与进阶Java版</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-reproduce-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6java%E7%89%88/</link>
+      <pubDate>Tue, 19 May 2015 14:42:35 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-reproduce-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6java%E7%89%88/</guid>
+      <description>&lt;p&gt;来源：&lt;a href=&#34;http://www.kuqin.com/shuoit/20150420/345784.html&#34;&gt;http://www.kuqin.com/shuoit/20150420/345784.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;　　欢迎加入我们。这是一份针对实习生/毕业生的服务端开发入门与进阶指南。遇到问题及时问你的
+mentor 或者直接问我。 建议：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;尽量用google查找技术资料。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;有问题在stackoverflow找找，大部分都已经有人回答。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;多看官方的技术文档。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ibm developerworkers的文章质量整体上有保障。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;平时花一些时间在github上阅读优秀项目源码。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用hexo</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-others-%E4%BD%BF%E7%94%A8hexo/</link>
+      <pubDate>Mon, 18 May 2015 16:47:39 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-others-%E4%BD%BF%E7%94%A8hexo/</guid>
+      <description>&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+
+&lt;p&gt;安装nodejs&lt;/p&gt;
+
+&lt;h2 id=&#34;安装hexo&#34;&gt;安装hexo&lt;/h2&gt;
+
+&lt;p&gt;1.安装hexo-cli&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install hexo-cli -g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.初始化blog文件夹&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hexo init blog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果当前文件夹是空文件夹，也可以省略“blog”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.geyuxu.com/2015-5-19-003.png&#34; alt=&#34;演示&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on 于九博客</title>
+    <link>http://blog.geyuxu.com/tags/nodejs/</link>
+    <description>Recent content in nodejs on 于九博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Fri, 18 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.geyuxu.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nodejs操作文件</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</guid>
+      <description>向文件中写数据：
+var txt = &#39;保存的数据&#39;; fs.writeFile(&#39;message.txt&#39;, txt, (err) =&amp;gt; { if (err) throw err; console.log(&#39;It\&#39;s saved!&#39;); } );  fs.writeFile的同步方法是
+fs.writeFileSync(file, data[, options])  从文件中读取数据：
+fs.readFile(&#39;/etc/passwd&#39;, (err, data) =&amp;gt; { if (err) throw err; console.log(data); });  node官方文档</description>
+    </item>
+    
+    <item>
+      <title>nodejs实现桌面应用-markdown编辑器</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%AE%9E%E7%8E%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8-markdown%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%AE%9E%E7%8E%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8-markdown%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>&lt;h1 id=&#34;安装node-webkit&#34;&gt;安装node-webkit&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g nw 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;什么是node-webkit&#34;&gt;什么是node-webkit&lt;/h1&gt;
+
+&lt;p&gt;node-webkit是使用nodejs和Chromium为核心开发桌面软件的技术，我们可以使用html/javascript/css来开发桌面应用的界面，用nodejs技术来开发桌面应用的逻辑业务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>npm使用国内镜像</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</guid>
+      <description>&lt;h2 id=&#34;切换方法&#34;&gt;切换方法&lt;/h2&gt;
+
+&lt;p&gt;方法一：在命令上指定&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm --registry http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法二：通过config命令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm config set registry http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法三：编辑 [User Home]/.npmrc 加入下面内容，此方法同方法二等效&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;registry = http://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs调用dnspodApi</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E8%B0%83%E7%94%A8dnspodapi/</link>
+      <pubDate>Sat, 23 May 2015 22:30:20 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E8%B0%83%E7%94%A8dnspodapi/</guid>
+      <description>&lt;p&gt;dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>nodejs发送https请求</title>
+      <link>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%8F%91%E9%80%81https%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Sat, 23 May 2015 18:03:00 +0000</pubDate>
+      
+      <guid>http://blog.geyuxu.com/posts/archives/20190223-nodejs-nodejs%E5%8F%91%E9%80%81https%E8%AF%B7%E6%B1%82/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;var https = require(&#39;https&#39;);
+
+https.request({
+  hostname: &#39;nodejs.org&#39;,
+  port: 443,
+  path: &#39;/api/https.html&#39;,
+  method: &#39;GET&#39;
+}, function(res) {
+  console.log(&amp;quot;statusCode: &amp;quot;, res.statusCode);
+  console.log(&amp;quot;headers: &amp;quot;, res.headers);
+
+  res.on(&#39;data&#39;, function(d) {
+    process.stdout.write(d);
+  });
+}).on(&#39;error&#39;, function(e) {
+  console.error(e);
+}).end();
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
