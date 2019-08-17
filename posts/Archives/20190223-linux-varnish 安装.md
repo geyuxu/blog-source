@@ -1,7 +1,6 @@
 ---
 title: "varnish 安装"
 date: 2016-11-11 13:09:00
-tags: varnish 
 ---
 
 1. 安装
