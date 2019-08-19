@@ -11,10 +11,6 @@ theme = "m10c"
   BeianURL = "http://beian.miit.gov.cn"
   BeianTXT = "苏ICP备14055844号"
 
-[[params.beian]]
-  url = "http://beian.miit.gov.cn"
-  txt = "苏ICP备14055844a号"
-
 [[params.social]]
   name = "github"
   url = "https://github.com/geyuxu"
