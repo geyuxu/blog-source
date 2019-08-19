@@ -1,6 +1,6 @@
 ---
 title: "使用hexo"
-date: 2015-05-18 16:47:39
+date: 2015-05-18
 tags: [hexo] 
 ---
 
@@ -75,3 +75,4 @@ tags: [hexo]
 >[《服务端工程师入门与进阶Java版》原文](http://www.kuqin.com/shuoit/20150420/345784.html)
 >
 >[文中使用的markdown编辑器](http://markdownpad.com/)
+

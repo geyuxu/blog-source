@@ -1,6 +1,6 @@
 ---
 title: "fortify 安装配置"
-date: 2016-03-17 15:03:00
+date: 2016-03-17
 tags: [fortify]
 ---
 ![HP Fortify SCA](https://img.geyuxu.com/2016-03-17-001.png)
@@ -34,3 +34,5 @@ tags: [fortify]
 
 ----------
    
+
+

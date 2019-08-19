@@ -1,6 +1,6 @@
 ---
 title: "和我一起学习clojureClr-调用.Net"
-date: 2015-05-21 00:04:41
+date: 2015-05-21
 tags: [clojure,clojure-clr]
 ---
 打开REPL，输入：
@@ -47,3 +47,5 @@ form是出来了，但是form上面什么都没有，并且程序死掉了。先
 >[Clojure CLR 入门](http://www.cnblogs.com/me-sa/archive/2013/03/25/2981192.html)
 
 >[Clojure - Functional Programming for the JVM](http://java.ociweb.com/mark/clojure/article.html)
+
+

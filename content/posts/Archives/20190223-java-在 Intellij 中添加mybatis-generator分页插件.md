@@ -1,6 +1,6 @@
 ---
 title: "在 Intellij 中添加mybatis-generator分页插件"
-date: 2015-11-02 20:19:39
+date: 2015-11-02
 tags: [java,mybatis,genreator]
 ---
 mybatis-genreator并没有为我们实现分页操作，本文介绍如何编写mybatis-genreator插件实现分页。
@@ -328,3 +328,5 @@ Command line:
 [http://bbs.csdn.net/topics/390841395](http://bbs.csdn.net/topics/390841395)    
 [http://www.iteye.com/problems/103171](http://www.iteye.com/problems/103171)    
 [Intellij IDEA 14中使用MyBatis-generator 自动生成MyBatis代码](http://blog.csdn.net/z69183787/article/details/46560071)
+
+

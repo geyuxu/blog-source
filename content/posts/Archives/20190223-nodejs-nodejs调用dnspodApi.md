@@ -1,6 +1,6 @@
 ---
 title: "nodejs调用dnspodApi"
-date: 2015-05-23 22:30:20
+date: 2015-05-23
 tags: [nodejs,dnspod,api] 
 ---
 dnspod是国内的一款DNS产品，关于它的介绍请自行搜索，本文（系列）讲的是如何使用nodejs调用dnspod提供的api实现ddns功能。
@@ -57,3 +57,4 @@ user_id 用户的ID，可选，仅代理接口需要， 用户接口不需要提
 >[dnspod官方api文档](https://support.dnspod.cn/Support/api)
 
 >[dnspod官方python调用demo](https://github.com/DNSPod/dnspod-python)
+

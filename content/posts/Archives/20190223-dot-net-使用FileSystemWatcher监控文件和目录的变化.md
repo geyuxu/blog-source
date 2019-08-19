@@ -1,6 +1,6 @@
 ---
 title: "使用FileSystemWatcher监控文件和目录的变化"
-date: 2015-05-22 00:29:09
+date: 2015-05-22
 tags: [.Net,FileSystemWatcher]
 ---
 ##常用属性：
@@ -87,3 +87,4 @@ Renamed ： 重命名文件或目录时
 >[FileSystemWatcher 类（msdn）](https://msdn.microsoft.com/zh-cn/library/system.io.filesystemwatcher.aspx)
 
 >[Linux和Mac OS X 中监视文件变化](http://blog.163.com/vic_kk/blog/static/49470524201041301257208/)
+

@@ -1,6 +1,6 @@
 ---
 title: "markdown学习笔记"
-date: 2015-05-22 22:47:12
+date: 2015-05-22
 tags: [markdown] 
 ---
 
@@ -86,3 +86,4 @@ tags: [markdown]
 
 参考：
 >[维基百科：Markdown](http://zh.wikipedia.org/wiki/Markdown)
+

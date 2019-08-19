@@ -1,6 +1,6 @@
 ---
 title: "svn常用命令"
-date: 2016-03-25 14:59:00
+date: 2016-03-25
 tags: [svn]
 ---
 checkout:

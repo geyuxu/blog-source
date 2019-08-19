@@ -1,6 +1,6 @@
 ---
 title: "自定义注解+SpringAop实现参数绑定"
-date: 2015-05-23 00:19:39
+date: 2015-05-23
 tags: [java,注解,spring mvc,aop,RequestBody]
 ---
 
@@ -129,3 +129,4 @@ applicationContext.xml:
 	
 	<bean class="com.geyuxu.interceptor.ConverterInterceptor" />
 	...
+

@@ -1,6 +1,6 @@
 ---
 title: "spring-boot JSP配置"
-date: 2016-04-09 19:53:00
+date: 2016-04-09
 tags: [java,spring boot,jsp]
 ---
 

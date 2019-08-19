@@ -1,6 +1,6 @@
 ---
 title: "和我一起学习clojureClr-Hello World"
-date: 2015-05-20 00:44:45
+date: 2015-05-20
 tags: [clojure,clojure-clr]
 ---
 >俗话说的好，java能做的事.net也能做，java不能做的事，.net还是能做。。。
@@ -68,3 +68,4 @@ tags: [clojure,clojure-clr]
 > [《Clojure编程》](http://book.douban.com/subject/21661495/)
 
 > [clojure官网](http://clojure.org/)
+
