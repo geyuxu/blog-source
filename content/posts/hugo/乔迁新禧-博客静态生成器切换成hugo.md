@@ -1,0 +1,129 @@
+---
+title: "乔迁新禧-博客静态生成器切换成hugo"
+date: 2019-08-19
+tags: [hugo,netlify]
+---
+
+我的博客系统是通过静态网站生成器hexo生成并上传到github仓库中,然后由netlify提供的持续集成.昨天我将静态生成器由hexo切换成hugo,现记录一下操作经过.
+
+### 在官网学习如何使用hugo,使本地可以运行
+
+在hugo官网上有基本的安装流程 https://gohugo.io/getting-started/quick-start/
+
+```
+brew install hugo
+
+hugo new site quickstart
+
+cd quickstart
+
+git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+
+echo 'theme = "m10c"' >> config.toml
+
+hugo new posts/my-first-post.md
+
+hugo server -D
+```
+
+和官网的区别我使用的是m10c的页面模版,页面模版可以在官网选择 https://themes.gohugo.io/
+
+### 运行hugo
+
+将hexo markdown文件复制到hugo工程的content/posts中,hugo运行后报错.发现hexo的md有兼容问题,是以下两个原因
+
+1. hexo 的markdown头会报错,调整后可以修复.
+    
+    hexo markdown头:
+    
+    ```
+    title: "乔迁新禧-博客静态生成器切换成hugo"
+    date: 2019-08-19 18:33:00
+    tags: [hugo]
+    ---
+    ```
+    需要改成hugo的形式:
+    
+    ```
+    ---
+    title: "乔迁新禧-博客静态生成器切换成hugo"
+    date: 2019-08-19 18:33:00
+    tags: [hugo]
+    ---
+    ```
+
+2. tags里面写了`#`如:`C#` 字符串报错,删除相关tag后恢复
+
+### 调整页面样式
+
+参考模版说明,在`config.toml`中调整页面样式
+
+```
+[params.style]
+  darkestColor = "#05191E"
+  darkColor = "#212121"
+  lightColor = "#f5e3e0"
+  lightestColor = "#f5f5f5"
+  primaryColor = "#fff"
+```
+
+### 添加备案号
+
+如果你在国内申请域名或者使用国内的云服务,需要进行网站备案.备案后会给你一个备案号,相关规定要求将备案号添加到网站页面上.
+
+1. 进入模版文件夹
+
+        cd themes/m10c
+
+2. 添加样式文件`layouts/partials/beian.html`
+    
+    ```
+     <a href="{{ .Site.Params.BeianURL }}" target="_blank" >{{ .Site.Params.BeianTXT }}</a>
+    ```
+    
+3. 修改`layouts/_default/baseof.html`文件,使我们添加的beian.html样式被引用.
+
+    ```
+    ...
+      </div>
+      <div style="font-size: 10px">{{ partial "beian.html" $ }}</div>
+    </header>
+    ...
+    ```
+    
+4. 回到博客根目录,修改config.toml配置文件
+    
+    ```
+    [[params.beian]]
+    url = "http://beian.miit.gov.cn"
+    txt = "苏ICP备14055844号"
+    ```
+    
+5. 执行`hexo server -D`后在浏览器中查看
+
+![](https://img.geyuxu.com/15662139748756.jpg)
+
+
+### 调整netlify配置
+	
+1. 运行`hugo version`查看版本号
+
+        Hugo Static Site Generator v0.57.2/extended darwin/amd64 BuildDate: unknown
+
+2. 在博客根目录添加`netlify.toml`文件,将查到的版本号添加进去
+
+```
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.57.2"
+[context.production.environment]
+  HUGO_VERSION = "0.57.2"
+```
+
+3. 进入netlify控制台,修改发布参数
+
+```
+Build command : hugo
+Publish directory : public/
+```
+
+
