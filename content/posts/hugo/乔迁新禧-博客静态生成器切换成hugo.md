@@ -26,7 +26,7 @@ hugo new posts/my-first-post.md
 hugo server -D
 ```
 
-和官网的区别我使用的是m10c的页面模版,页面模版可以在官网选择 https://themes.gohugo.io/
+和官网不一样的地方是我使用的是`m10c`的页面模版,页面模版可以在官网选择 https://themes.gohugo.io/
 
 ### 运行hugo
 
