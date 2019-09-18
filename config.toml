@@ -13,10 +13,10 @@ theme = "m10c"
 
 [[params.social]]
   name = "github"
-  url = "https://github.com/geyuxu"
+  url = "https://github.com/geyuxu/blog-source/issues"
 
 [[params.social]]
-  name = "triangle"
+  name = "weibo"
   url = "https://www.weibo.com/573005502"
 
 [params.style]
