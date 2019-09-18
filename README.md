@@ -1,3 +1,6 @@
 - 博客地址: https://blog.geyuxu.com
 - 博客markdown地址: https://github.com/geyuxu/blog-source/tree/master/content/posts
 - CI: https://app.netlify.com/
+- hugo: https://gohugo.io
+- m10c: https://themes.gohugo.io/hugo-theme-m10c/
+- feathericons/feather: https://github.com/feathericons/feather
