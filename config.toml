@@ -25,7 +25,7 @@ theme = "m10c"
 
 [[params.social]]
   name = "github"
-  url = "https://github.com/geyuxu/blog-source/issues"
+  url = "https://github.com/geyuxu"
 
 [[params.social]]
   name = "weibo"
