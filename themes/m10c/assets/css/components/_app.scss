@@ -24,6 +24,14 @@
   }
 }
 
+.app-header-nav {
+  font-size: 20px;
+  :hover{
+    color: rgb(6, 2, 37);
+    font-weight: bold
+  } 
+}
+
 @media (min-width: 940px) {
   .app-header {
     position: fixed;
