@@ -1,0 +1,26 @@
+nav{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    //width: 300px;
+    //background-color: #f1f1f1;
+    ul {
+      margin-left: 1.5em;
+    }
+  }
+  li a {
+    display: block;
+    color: rgb(100, 100, 100);
+    padding: 3px;
+    text-decoration: none;
+  }
+  li a:hover {
+    //background-color: #555;
+    color: red;
+    font-weight: bold;
+  }
+} 
+

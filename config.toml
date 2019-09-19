@@ -11,13 +11,27 @@ theme = "m10c"
   BeianURL = "http://beian.miit.gov.cn"
   BeianTXT = "苏ICP备14055844号"
 
+[[params.link]]
+  name = "HOME"
+  url = "/"
+
+[[params.link]]
+  name = "TAGS"
+  url = "/tags"
+
+[[params.link]]
+  name = "技术分享会"
+  url = "/tags/技术分享会/"
+
 [[params.social]]
   name = "github"
-  url = "https://github.com/geyuxu/blog-source/issues"
+  url = "https://github.com/geyuxu"
 
 [[params.social]]
   name = "weibo"
-  url = "https://www.weibo.com/573005502"
+  url = "https://weibo.com/geyuxu"
+
+
 
 [params.style]
   lightestColor = "#05191E"
