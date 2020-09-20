@@ -2,6 +2,7 @@ baseURL = "https://blog.geyuxu.com/"
 languageCode = "cn-zh"
 title = "于九博客"
 theme = "m10c"
+canonifyurls = true
 
 
 [params]
