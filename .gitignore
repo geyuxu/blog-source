@@ -3,3 +3,5 @@ resources/
 .MWebMetaData/
 media/
 
+.hugo_build.lock
+
